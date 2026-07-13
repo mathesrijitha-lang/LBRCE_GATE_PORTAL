@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSE Subjects | LBRCE GATE Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.subject-container{
+width:90%;
+margin:auto;
+padding:20px;
+}
+
+.subject-card{
+background:white;
+margin:20px 0;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.subject-card h2{
+color:#0066cc;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 18px;
+margin:5px;
+background:#0066cc;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.btn:hover{
+background:#004999;
+}
+
+#search{
+width:100%;
+padding:12px;
+font-size:18px;
+margin:20px 0;
+border-radius:8px;
+border:1px solid gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🎓 LBRCE GATE Portal
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="subjects.html">Branches</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>CSE GATE Subjects</h1>
+
+<p>Select any subject and start learning.</p>
+
+</section>
+
+<div class="subject-container">
+
+<input
+type="text"
+id="search"
+placeholder="Search Subject..."
+onkeyup="searchSubject()">
+
+<!-- Engineering Mathematics -->
+
+<div class="subject-card" id="engineering-mathematics">
+
+<h2>Engineering Mathematics</h2>
+
+<a class="btn" href="pdfs/maths_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/maths_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/maths_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Engineering+Mathematics+Gate">
+Videos
+</a>
+
+</div>
+
+<!-- Digital Logic -->
+
+<div class="subject-card" id="digital-logic">
+
+<h2>Digital Logic</h2>
+
+<a class="btn" href="pdfs/digital_logic_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/digital_logic_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/digital_logic_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Digital+Logic+Gate">
+Videos
+</a>
+
+</div>
+
+<!-- Programming & Data Structures -->
+
+<div class="subject-card" id="programming-data-structures">
+
+<h2>Programming & Data Structures</h2>
+
+<a class="btn" href="pdfs/ds_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/ds_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/ds_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Data+Structures+Gate">
+Videos
+</a>
+
+</div>
+<!-- Algorithms -->
+
+<div class="subject-card" id="algorithms">
+
+<h2>Algorithms</h2>
+
+<a class="btn" href="pdfs/algorithms_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/algorithms_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/algorithms_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Algorithms+Gate">
+Videos
+</a>
+
+</div>
+
+<!-- Computer Organization & Architecture -->
+
+<div class="subject-card" id="computer-organization">
+
+<h2>Computer Organization & Architecture</h2>
+
+<a class="btn" href="pdfs/coa_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/coa_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/coa_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Computer+Organization+Gate">
+Videos
+</a>
+
+</div>
+
+<!-- Operating Systems -->
+
+<div class="subject-card" id="operating-systems">
+
+<h2>Operating Systems</h2>
+
+<a class="btn" href="pdfs/os_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/os_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/os_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Operating+Systems+Gate">
+Videos
+</a>
+
+</div>
+
+<!-- Database Management Systems -->
+
+<div class="subject-card" id="dbms">
+
+<h2>Database Management Systems (DBMS)</h2>
+
+<a class="btn" href="pdfs/dbms_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/dbms_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/dbms_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=DBMS+Gate">
+Videos
+</a>
+
+</div>
+<!-- Computer Networks -->
+
+<div class="subject-card" id="computer-networks">
+
+<h2>Computer Networks</h2>
+
+<a class="btn" href="pdfs/cn_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/cn_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/cn_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Computer+Networks+Gate">
+Videos
+</a>
+
+</div>
+
+<!-- Theory of Computation -->
+
+<div class="subject-card" id="theory-of-computation">
+
+<h2>Theory of Computation</h2>
+
+<a class="btn" href="pdfs/toc_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/toc_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/toc_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Theory+of+Computation+Gate">
+Videos
+</a>
+
+</div>
+
+<!-- Compiler Design -->
+
+<div class="subject-card" id="compiler-design">
+
+<h2>Compiler Design</h2>
+
+<a class="btn" href="pdfs/compiler_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/compiler_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/compiler_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Compiler+Design+Gate">
+Videos
+</a>
+
+</div>
+
+<!-- Software Engineering -->
+
+<div class="subject-card" id="software-engineering">
+
+<h2>Software Engineering</h2>
+
+<a class="btn" href="pdfs/se_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/se_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/se_pyq.pdf">PYQs</a>
+
+<a class="btn"
+target="_blank"
+href="https://www.youtube.com/results?search_query=Software+Engineering+Gate">
+Videos
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+function searchSubject(){
+
+let input=document.getElementById("search").value.toLowerCase();
+
+let cards=document.getElementsByClassName("subject-card");
+
+for(let i=0;i<cards.length;i++){
+
+let title=cards[i].getElementsByTagName("h2")[0].innerHTML.toLowerCase();
+
+if(title.indexOf(input)>-1){
+
+cards[i].style.display="block";
+
+}else{
+
+cards[i].style.display="none";
+
+}
+
+}
+
+}
+
+</script>
+
+<footer>
+
+<h3>LBRCE GATE Portal</h3>
+
+<p>Learn • Practice • Succeed</p>
+
+<p>
+<a href="index.html">Home</a> |
+<a href="subjects.html">Branches</a> |
+<a href="resources.html">Resources</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a>
+</p>
+
+<p>© 2026 LBRCE GATE Portal. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>

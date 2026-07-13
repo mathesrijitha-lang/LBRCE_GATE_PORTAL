@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AIML Subjects | LBRCE GATE Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.subject-container{
+width:90%;
+margin:auto;
+padding:20px;
+}
+
+.subject-card{
+background:white;
+margin:20px 0;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.subject-card h2{
+color:#0066cc;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 18px;
+margin:5px;
+background:#0066cc;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.btn:hover{
+background:#004999;
+}
+
+#search{
+width:100%;
+padding:12px;
+font-size:18px;
+margin:20px 0;
+border-radius:8px;
+border:1px solid gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+🎓 LBRCE GATE Portal
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="subjects.html">Branches</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>AIML GATE Subjects</h1>
+
+<p>Select any subject and start learning.</p>
+
+</section>
+
+<div class="subject-container">
+
+<input
+type="text"
+id="search"
+placeholder="Search Subject..."
+onkeyup="searchSubject()">
+
+<!-- Engineering Mathematics -->
+
+<div class="subject-card">
+
+<h2>Engineering Mathematics</h2>
+
+<a class="btn" href="pdfs/maths_notes.pdf">Notes</a>
+<a class="btn" href="pdfs/maths_books.pdf">Books</a>
+<a class="btn" href="pdfs/maths_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Engineering+Mathematics+Gate">
+Videos
+</a>
+
+</div>
+
+<!-- Python Programming -->
+
+<div class="subject-card">
+
+<h2>Python Programming</h2>
+
+<a class="btn" href="pdfs/python_notes.pdf">Notes</a>
+<a class="btn" href="pdfs/python_books.pdf">Books</a>
+<a class="btn" href="pdfs/python_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Python+Programming">
+Videos
+</a>
+
+</div>
+
+<!-- Probability & Statistics -->
+
+<div class="subject-card">
+
+<h2>Probability & Statistics</h2>
+
+<a class="btn" href="pdfs/probability_notes.pdf">Notes</a>
+<a class="btn" href="pdfs/probability_books.pdf">Books</a>
+<a class="btn" href="pdfs/probability_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Probability+and+Statistics">
+Videos
+</a>
+
+</div>
+<!-- Machine Learning -->
+
+<div class="subject-card">
+
+<h2>Machine Learning</h2>
+
+<a class="btn" href="pdfs/ml_notes.pdf">Notes</a>
+<a class="btn" href="pdfs/ml_books.pdf">Books</a>
+<a class="btn" href="pdfs/ml_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Machine+Learning">
+Videos
+</a>
+
+</div>
+
+<!-- Deep Learning -->
+
+<div class="subject-card">
+
+<h2>Deep Learning</h2>
+
+<a class="btn" href="pdfs/dl_notes.pdf">Notes</a>
+<a class="btn" href="pdfs/dl_books.pdf">Books</a>
+<a class="btn" href="pdfs/dl_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Deep+Learning">
+Videos
+</a>
+
+</div>
+
+<!-- Artificial Intelligence -->
+
+<div class="subject-card">
+
+<h2>Artificial Intelligence</h2>
+
+<a class="btn" href="pdfs/ai_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/ai_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/ai_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Artificial+Intelligence">
+Videos
+</a>
+
+</div>
+
+<!-- Data Mining -->
+
+<div class="subject-card">
+
+<h2>Data Mining</h2>
+
+<a class="btn" href="pdfs/datamining_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/datamining_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/datamining_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Data+Mining">
+Videos
+</a>
+
+</div>
+<!-- Neural Networks -->
+
+<div class="subject-card">
+
+<h2>Neural Networks</h2>
+
+<a class="btn" href="pdfs/neural_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/neural_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/neural_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Neural+Networks">
+Videos
+</a>
+
+</div>
+
+<!-- Computer Vision -->
+
+<div class="subject-card">
+
+<h2>Computer Vision</h2>
+
+<a class="btn" href="pdfs/cv_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/cv_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/cv_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Computer+Vision">
+Videos
+</a>
+
+</div>
+
+<!-- Natural Language Processing -->
+
+<div class="subject-card">
+
+<h2>Natural Language Processing</h2>
+
+<a class="btn" href="pdfs/nlp_notes.pdf">Notes</a>
+
+<a class="btn" href="pdfs/nlp_books.pdf">Books</a>
+
+<a class="btn" href="pdfs/nlp_pyq.pdf">PYQs</a>
+
+<a class="btn" target="_blank"
+href="https://www.youtube.com/results?search_query=Natural+Language+Processing">
+Videos
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+function searchSubject(){
+
+let input=document.getElementById("search").value.toLowerCase();
+
+let cards=document.getElementsByClassName("subject-card");
+
+for(let i=0;i<cards.length;i++){
+
+let title=cards[i].getElementsByTagName("h2")[0].innerHTML.toLowerCase();
+
+if(title.indexOf(input)>-1){
+
+cards[i].style.display="block";
+
+}else{
+
+cards[i].style.display="none";
+
+}
+
+}
+
+}
+
+</script>
+
+<footer>
+
+<h3>LBRCE GATE Portal</h3>
+
+<p>Learn • Practice • Succeed</p>
+
+<p>
+<a href="index.html">Home</a> |
+<a href="subjects.html">Branches</a> |
+<a href="resources.html">Resources</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a>
+</p>
+
+<p>© 2026 LBRCE GATE Portal. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
