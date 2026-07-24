@@ -1,14 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Subject Wise Notes | LBRCE GATE Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+background:#f4f7fb;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#0d6efd;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:40px 20px;
+background:white;
+}
+
+.hero h1{
+color:#0d6efd;
+}
+
+.search-box{
+width:90%;
+max-width:500px;
+padding:12px;
+margin-top:20px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
+color:#0d6efd;
+}
+
+.card button{
+margin-top:15px;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+background:#0d6efd;
+color:white;
+cursor:pointer;
+font-size:15px;
+}
+
+.card button:hover{
+background:#084298;
+}
+
+</style>
+
 </head>
 
 <body>
-  
+
+<nav>
+
+<div class="logo">
+🎓 LBRCE GATE Portal
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="subjects.html">Subjects</a></li>
+
+<li><a href="resources.html">Resources</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>📚 Subject Wise Notes</h1>
+
+<p>Select your branch to access notes.</p>
+
+<input
+type="text"
+class="search-box"
+placeholder="Search Branch...">
+
+</section>
+
+<div class="cards">
+  <div class="card">
+<h2>📡 ECE</h2>
+<p>Electronics & Communication Engineering</p>
+<a href="ece_notes.html">
+<button>Open</button>
+</a>
+</div>
+
+<div class="card">
+<h2>💻 CSE</h2>
+<p>Computer Science Engineering</p>
+<a href="cse_notes.html">
+<button>Open</button>
+</a>
+</div>
+
+<div class="card">
+<h2>⚡ EEE</h2>
+<p>Electrical & Electronics Engineering</p>
+<a href="eee_notes.html">
+<button>Open</button>
+</a>
+</div>
+
+<div class="card">
+<h2>🏗️ CIVIL</h2>
+<p>Civil Engineering</p>
+<a href="civil_notes.html">
+<button>Open</button>
+</a>
+</div>
+
+<div class="card">
+<h2>⚙️ MECH</h2>
+<p>Mechanical Engineering</p>
+<a href="mech_notes.html">
+<button>Open</button>
+</a>
+</div>
+
+<div class="card">
+<h2>🌐 IT</h2>
+<p>Information Technology</p>
+<a href="it_notes.html">
+<button>Open</button>
+</a>
+</div>
+
+<div class="card">
+<h2>🤖 AIML</h2>
+<p>Artificial Intelligence & Machine Learning</p>
+<a href="aiml_notes.html">
+<button>Open</button>
+</a>
+</div>
+
+<div class="card">
+<h2>🧠 AIDS</h2>
+<p>Artificial Intelligence & Data Science</p>
+<a href="aids_notes.html">
+<button>Open</button>
+</a>
+</div>
+</div>
+
+<script>
+
+const searchBox = document.querySelector(".search-box");
+
+const cards = document.querySelectorAll(".card");
+
+searchBox.addEventListener("keyup", function () {
+
+const value = searchBox.value.toLowerCase();
+
+cards.forEach(card => {
+
+const text = card.innerText.toLowerCase();
+
+if(text.includes(value)){
+
+card.style.display = "block";
+
+}else{
+
+card.style.display = "none";
+
+}
+
+});
+
+});
+
+</script>
+
 </body>
 
 </html>
