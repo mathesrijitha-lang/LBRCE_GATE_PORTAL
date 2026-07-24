@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>👨‍💼 Admin Dashboard</h1>
+
+<h3 id="studentCount">Registered Students : 0</h3>
+<div style="margin:15px 0;">
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search student by email">
+
+<button id="searchBtn">🔍 Search</button>
+
+<button id="showAllBtn">📋 Show All</button>
+
+</div>
+<p id="onlineCount">🟢 Online Students : 0</p>
+
+<p id="offlineCount">🔴 Offline Students : 0</p>
+<table border="1" cellpadding="10">
+    <hr>
+
+<h2>📢 Post Announcement</h2>
+
+<textarea
+id="announcement"
+rows="4"
+cols="40"
+placeholder="Type announcement here..."></textarea>
+
+<br><br>
+
+<button id="postBtn">Post Announcement</button>
+
+<hr>
+    <button id="logoutBtn">🚪 Logout</button>
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Login Time</th>
+            <th>Logout Time</th>
+        </tr>
+    </thead>
+
+    <tbody id="studentTable">
+
+    </tbody>
+
+</table>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
