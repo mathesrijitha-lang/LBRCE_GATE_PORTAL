@@ -1,30 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Login | LBRCE GATE Portal</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<nav>
+
+<a href="index.html" class="logo">
+🎓 LBRCE GATE Portal
+</a>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="subjects.html">Subjects</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
 <h1>Student Login</h1>
 
-<p>Login with Email or Phone Number</p>
+<p>Login using your registered email address.</p>
 
-<input type="text" placeholder="Enter Email or Phone Number">
+<div class="card" style="max-width:400px;margin:auto;">
+
+<input
+id="email"
+type="email"
+placeholder="Enter Email"
+style="width:100%;padding:12px;margin-bottom:15px;">
+
+<input
+id="password"
+type="password"
+placeholder="Enter Password"
+style="width:100%;padding:12px;margin-bottom:20px;">
+
+<button id="signupBtn">Sign Up</button>
 
 <br><br>
 
-<button>Send OTP</button>
-<br><br>
-
-<input type="text" placeholder="Enter OTP">
+<button id="loginBtn">Login</button>
 
 <br><br>
 
-<button>Verify OTP</button>
+<p id="message"></p>
 
+</div>
+
+</section>
 </body>
+
+<script type="module" src="login.js"></script>
 
 </html>
